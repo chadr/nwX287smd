@@ -1,8 +1,10 @@
 # Necroware's nwX287 RTC module
 
+This is a version of Necroware's nwx287 but with an SMD crystal. This means you can solder the IC and crystal in one motion with a stencil.
+
 ![photo](./images/top.jpg)
 
-This is a version of Necroware's nwx287 but with an SMD crystal. This means you can solder the IC and crystal in one motion with a stencil.
+## info from the original Repo
 
 This part should be compatible with following RTC modules:
 
@@ -15,36 +17,6 @@ This part should be compatible with following RTC modules:
 * VIA VT82887 (using BQ3285)
 
 Video: https://www.youtube.com/watch?v=svPNxILeQEw
-
-## Remarks to the used RTC chips
-
-Pay attention, which RTC IC you need. Most of the mainboards with an RTC module
-need BQ3285, but some EISA mainboards require BQ4285 with chip enable signaling
-on pins 21/22 to control external memory. The Benchmarq ICs are easier to find
-today, that's why they are proposed, but there are some compatible ICs existing
-which can be used instead as well:
-
-* Benchmarq BQ3285 = Dallas DS12885
-* Benchmarq BQ4285 = Dallas DS14285
-
-This module can be also used as a replacement for the Hitachi HD146818P RTC chip
-which was not only used in many PC mainboards, but also in other devices and home
-computers like the __BBC Master__. On some devices the pin 1 has to be pulled up
-to pin 24 (VCC, Motorola Mode) or down to pin 12 (Ground, Intel Mode) using a 10k
-resistor. This was tested by Adrian on his YT channel (he used a simple bodge wire,
-but it's safer to use a resistor: https://youtu.be/2Sgleturods?t=2970)
-
-## Cutting the module pins
-
-*Important:* some mainboards seem to use /RCL pin 21, so cut it first if you are
-sure, that your mainboard doesn't use it.
-
-Dependent on which RTC chip you are using you have to cut off some pins on the
-module. If you are using BQ3285, you need to remove pins 2,3,16,20,21,22. When
-using BQ4285 you need to remove pins 2,3,16,20.
-
-![photo](./images/pinout.jpg)
-![photo](./images/bottom.jpg)
 
 ## Force Motorola / Intel mode
 
