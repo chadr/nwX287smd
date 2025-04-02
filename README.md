@@ -4,6 +4,11 @@ This is a version of Necroware's nwx287 but with an SMD crystal. This means you 
 
 ![photo](./images/top.jpg)
 
+## For sale on eBay and Tindie
+https://www.ebay.com/itm/276981098778?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=An-bJCO5SaS&sssrc=2380676&ssuid=An-bJCO5SaS&widget_ver=artemis&media=COPY
+
+<a href="https://www.tindie.com/stores/pcrestoration/?ref=offsite_badges&utm_source=sellers_PCRestoration&utm_medium=badges&utm_campaign=badge_large"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-larges.png" alt="I sell on Tindie" width="200" height="104"></a>
+
 ## info from the original Repo
 
 This part should be compatible with following RTC modules:
@@ -18,7 +23,7 @@ This part should be compatible with following RTC modules:
 
 Video: https://www.youtube.com/watch?v=svPNxILeQEw
 
-## Force Motorola / Intel mode
+### Force Motorola / Intel mode
 
 The BQ3285 and most of the compatible chips can work in two modes Motorola and
 Intel. The Motorola mode was usually used on home computers with Motorola CPU
@@ -35,7 +40,7 @@ systems, which expect the chip to be in Motorola mode. Therefore an optional
 jumper was introduced on the module to force a particular mode if needed. If
 the module is not workin in your system, try to put a solder blob as required.
 
-## Bill of Materials
+### Bill of Materials
 
 Part | # | Description
 -----|---|-----------------------------------------
