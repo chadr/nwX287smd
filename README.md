@@ -2,6 +2,7 @@
 
 This is a version of Necroware's nwx287 but with an SMD crystal. This means you can solder the IC and crystal in one motion with a stencil.
 
+![photo](./images/bottom.jpg)
 ![photo](./images/top.jpg)
 
 ## For sale on eBay and Tindie
