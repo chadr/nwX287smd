@@ -2,16 +2,7 @@
 
 ![photo](./images/top.jpg)
 
-This is a drop-in replacement for RTC modules with solid body. Such modules were
-widely used on 486 and Pentium mainboards back in the days. After so many years
-the battery inside of such modules got empty and there is no way to exchange it.
-With empty battery BIOS settings can not be saved and so many mainboards can't
-even boot properly. This alternative solution has a socket for CR1225 and the
-battery can be easily replaced again, when it gets empty. This module can be
-used with BQ3285, BQ4285 or pin compatible RTC chips, dependent on the
-requirements. This module was tested only with the named ICs, but it should be
-also compatible with DS1385, which has additional 2KB of NVRAM and was used on
-many microchannel and EISA mainboards.
+This is a version of Necroware's nwx287 but with an SMD crystal. This means you can solder the IC and crystal in one motion with a stencil.
 
 This part should be compatible with following RTC modules:
 
@@ -77,7 +68,7 @@ the module is not workin in your system, try to put a solder blob as required.
 Part | # | Description
 -----|---|-----------------------------------------
 U1   | 1 | Real-Time Clock BQ3285S or BQ4285S SO-24
-Y1   | 1 | Crystal oscillator 32.768kHz 6pF
+Y1   | 1 | Seiko SC32S-7PF20PPM SMD crystal 32.768kHz
 BT1  | 1 | CR1220 / CR1225 SMD battery holder
 
 
